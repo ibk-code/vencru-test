@@ -1,0 +1,28 @@
+:root {
+  /* ------ purple color code ------ */
+  --purple600: #7f56d9;
+  --purple800: #53389e;
+  --purple700: #6941c6;
+  --purple300: #d6bbfb;
+  --purple100: #f4ebff;
+  --purple500: #9e77ed;
+  --purple50: #f9f5ff;
+
+  /* ------- grey color codes ------ */
+  --grey700: #344054;
+  --grey300: #d0d5dd;
+  --grey500: #667085;
+  --grey600: #475467;
+  --grey200: #eaecf0;
+  --grey100: #4f4f4f;
+  --grey800: #1d2939;
+  --grey900: #101828;
+  --grey50: #f9fafb;
+  --grey400: #f2f4f7;
+
+  /* ------- white color codes ------ */
+  --white100: #ffffff;
+
+  /* ------ green color codes ------- */
+  --green50: #ecfdf3;
+}

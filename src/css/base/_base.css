@@ -1,0 +1,29 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--grey50);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* root configuraion for screen */
+/* @media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}

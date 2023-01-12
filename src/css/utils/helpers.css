@@ -1,0 +1,212 @@
+@tailwind utilities;
+@layer utilities {
+  /* -------- input element utilities -------- */
+  .input-wrap {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  .input-control,
+  .input-append,
+  .input-textarea {
+    height: 40px;
+    width: 100%;
+    display: block;
+    border: 1px solid var(--grey300);
+    border-radius: 8px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+  }
+
+  .input-control[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+    border: 1px solid var(--grey300);
+    background: var(--white100);
+    accent-color: var(--purple600);
+  }
+
+  .input-textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  .input-append {
+    display: flex;
+    align-items: center;
+    gap: 0.275rem;
+    padding-right: 0.275rem;
+    background: var(--white100);
+  }
+
+  .input-append .input-control {
+    border: none;
+    height: inherit;
+    height: 35px;
+    outline: none;
+    margin-top: 0;
+    border-left: 1px solid var(--grey300);
+    border-radius: 0;
+  }
+
+  .input-control[type="radio"] {
+    height: 15px;
+    width: 15px;
+    accent-color: var(--purple600);
+  }
+
+  .input-append.no--border .input-control {
+    border: none;
+  }
+
+  .input-control::placeholder {
+    color: var(--grey500);
+  }
+
+  /* -------- button element utilities ------- */
+  .btn {
+    min-height: 39px;
+    display: block;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .btn:disabled {
+    opacity: 0.5;
+  }
+
+  .btn-tran {
+    @apply bg-white-100 flex items-center gap-2 text-grey-700 h-[fit-content] px-4 border border-solid border-grey-300;
+  }
+
+  .btn-error {
+    @apply bg-red-50 flex items-center gap-2 h-[fit-content] px-4 text-red-700;
+  }
+}
+
+/* ------- menu utility classes ------ */
+.menu-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+}
+
+.menu-link svg path {
+  stroke: var(--grey500);
+}
+
+.menu-link span {
+  color: var(--grey700);
+}
+
+.menu-info {
+  background: var(--grey400);
+  height: 25px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey700);
+  font-size: 0.8rem;
+  border-radius: 16px;
+}
+
+.menu-active {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: var(--grey50);
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.menu-active span {
+  color: var(--grey900);
+}
+
+/* ------ table utility classes ------- */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--grey200);
+  border-radius: 8px;
+}
+
+.table-wrapper table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  width: 100%;
+}
+
+.table-wrapper table thead {
+  background: var(--grey50);
+}
+
+.table-wrapper table tbody {
+  background: var(--white100);
+}
+
+.table-wrapper table thead tr {
+  border-bottom: 1px solid var(--grey200);
+  display: table-row;
+}
+
+.table-wrapper table thead tr th {
+  padding: 0.5rem 0.5rem;
+  color: var(--grey500);
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.table-wrapper table thead tr th input,
+.table-wrapper table tbody tr td input {
+  height: 15px;
+  width: 15px;
+  accent-color: var(--purple700);
+  border-radius: 5px;
+}
+
+.table-wrapper table thead tr th svg path {
+  stroke: var(--grey500);
+}
+
+.table-wrapper table tbody tr {
+  border-bottom: 1px solid var(--grey200);
+}
+
+.table-wrapper tbody tr td {
+  padding: 0.8rem 0.5rem;
+  font-size: 0.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.table-wrapper tbody {
+  background-color: var(--white100);
+}
+
+.products-wrap {
+  display: flex;
+}
+
+.products-wrap > img {
+  height: 30px;
+  width: 30px;
+}
+
+.products-wrap > div {
+  border: 3px solid var(--white100);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.products-wrap > div:not(:first-child) {
+  margin-left: -0.5rem;
+}

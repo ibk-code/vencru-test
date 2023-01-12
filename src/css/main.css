@@ -1,0 +1,17 @@
+/* ----------- import reset styles --------- */
+@import "modern-css-reset/dist/reset.min.css";
+
+/* ---------- import abstract folders ----------- */
+@import "./abstracts/_variable.css";
+
+/* ------------ import base folder ------------ */
+@import "tailwindcss/components";
+@import "./base/_base.css";
+@import "./base/_typography.css";
+
+/* ---------- import component folder ---------- */
+@import "tailwindcss/components";
+
+/* ----------- import utilities folder ---------- */
+@import "tailwindcss/utilities";
+@import "./utils/helpers.css";
